@@ -1,0 +1,294 @@
+body {
+  background-color: indianred;
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#alpaca-image {
+
+  
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 100px;
+  
+
+}
+
+
+
+#alpaca-head {
+  background-color: rgb(214, 207, 207);
+  width: 100px;
+  height: 100px;
+  border-radius: 46%;
+  position: relative;
+  left: 40px;
+  z-index: 3;
+  bottom: 10px;
+  
+}
+
+#alpaca-body::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 50px;;
+  background-color: rgb(186, 185, 185);
+  border-radius: 0% 0% 100% 100%;
+  opacity: 100%;
+  left: 11px;
+  z-index: 2;
+}
+
+#alpaca-body {
+  width: 200px;
+  height: 120px;
+  position: relative;
+  border-radius: 40%;
+  left: 50px;
+  bottom: 30px;
+  z-index: 1;
+}
+
+#left-eye {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 40px;
+  left: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.eye-black {
+  background: black;
+}
+
+.eye-brown {
+  background: rgb(66, 43, 3);
+}
+
+.eye-blue {
+  background: rgb(45, 106, 205);
+}
+
+
+#right-eye {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 60px;
+  border-radius: 50%;
+  top: 20px;
+  z-index: 1;
+}
+
+#front-left-leg {
+  background: rgb(180, 178, 178);
+  width: 25px;
+  height: 100px;
+  position: relative;
+  border-radius: 30%;
+  left: 65px;
+  bottom: 60px;
+  z-index: 0;
+}
+
+#front-right-leg {
+  background: rgb(180, 178, 178);
+  width: 25px;
+  height: 100px;
+  position: relative;
+  border-radius: 30%;
+  left: 180px;
+  bottom: 160px;
+  z-index: 0;
+}
+
+#rear-left-leg {
+  background: rgb(180, 178, 178);
+  width: 25px;
+  height: 100px;
+  position: relative;
+  border-radius: 30%;
+  left: 95px;
+  bottom: 265px;
+}
+
+#rear-right-leg {
+  background: rgb(180, 178, 178);
+  width: 25px;
+  height: 100px;
+  position: relative;
+  border-radius: 30%;
+  left: 210px;
+  bottom: 365px;
+}
+
+#adjust-alpaca {
+  display: flex;
+  justify-content: space-evenly;;
+}
+
+.eye-btn {
+  display: flex;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+
+.fur-grey {
+  background: rgb(201, 194, 194);
+}
+
+.fur-blue {
+  background: rgb(22, 22, 136);
+}
+
+.fur-peanut {
+  background: rgb(177, 132, 73);
+}
+
+#mouth {
+  width: 40px;
+  height: 40px;
+  background: rgb(145, 99, 99);    
+  position: relative;
+  top: 5px;
+  left: 30px;
+  border-radius: 50%;
+}
+
+#mouth-former {
+  width: 40px;
+  height: 30px;
+  background: rgb(214, 207, 207);    
+  position: relative;
+  top: px;
+  left: 0px;
+  border-radius: 20%;
+}
+
+#left-horn {
+  background: rgb(214, 207, 207);;
+  width: 20px;
+  height: 80px;
+  position: relative;
+  bottom: 120px;
+}
+
+#right-horn {
+  background: rgb(214, 207, 207);;
+  width: 20px;
+  height: 80px;
+  position: relative;
+  bottom: 200px;
+  left: 80px;
+}
+
+
+canvas {
+  display: block;
+  margin: auto;
+  background-color: white;
+  border: 2px solid black;
+}
+
+
+
+
+
+
+
+.eye-btn {
+  background: lightsalmon;
+  margin: 5px;
+}
+
+.eye-btn:active {
+  background-color: #ff895b; 
+  box-shadow: 0 2px #2c0f03(0, 0, 0, 0.2); 
+  transform: translateY(2px);
+}
+
+.fur-btn {
+  display: flex;
+  background: lightsalmon;
+  margin: 5px;
+}
+
+.fur-btn:active {
+  background-color: #ff895b; 
+  box-shadow: 0 2px #2c0f03(0, 0, 0, 0.2); 
+  transform: translateY(2px);
+}
+
+.horn-btn {
+  display: flex;
+  background: lightsalmon;
+  margin: 5px;
+}
+
+.horn-btn:active {
+  background-color: #ff895b; 
+  box-shadow: 0 2px #2c0f03(0, 0, 0, 0.2); 
+  transform: translateY(2px);
+}
+
+.download-btn {
+  display: flex;
+  background: salmon;
+  margin: auto;
+  top: 25px;
+  position: relative;
+}
+
+.download-btn:active {
+  background-color: rgb(255, 103, 86);
+  box-shadow: 0 2px #2c0f03(0, 0, 0, 0.2); 
+  transform: translateY(2px);
+}
+
+.randomize-btn {
+  background: lightsalmon;
+  margin: 5px;
+}
+
+.randomize-btn:active {
+  background-color: #ff895b; 
+  box-shadow: 0 2px #2c0f03(0, 0, 0, 0.2); 
+  transform: translateY(2px);
+}
+
+.reset-btn {
+  display: flex;
+  background: lightsalmon;
+  margin: 5px;
+  
+  
+}
+
+.reset-btn:active {
+  background-color: #ff895b; 
+  box-shadow: 0 2px #2c0f03(0, 0, 0, 0.2); 
+  transform: translateY(2px);
+}
+
+.btn {
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 10px;
+  
+}
